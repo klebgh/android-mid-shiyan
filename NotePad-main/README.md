@@ -68,7 +68,7 @@ private String formatDateTime(long time) {
 
 ```
 
-![屏幕截图 2025-12-01 225959](image\屏幕截图 2025-12-01 225959.png)
+![屏幕截图 2025-12-01 225959](https://github.com/klebgh/android-mid-shiyan/blob/main/NotePad-main/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-12-01%20225959.png?raw=true)
 
 ## 	添加笔记查询功能（根据标题或内容查询）
 
@@ -85,7 +85,7 @@ private String formatDateTime(long time) {
 
 
 
-![屏幕截图 2025-12-02 142806](image\屏幕截图 2025-12-02 142806.png)
+![屏幕截图 2025-12-02 142806](https://github.com/klebgh/android-mid-shiyan/blob/main/NotePad-main/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-12-02%20142806.png?raw=true)
 
 这里因为后面在ui优化时优化了搜索界面布局，无法展示初始搜索界面代码
 
@@ -198,9 +198,7 @@ protected void onListItemClick(ListView l, View v, int position, long id) {
 }
 ```
 
-搜索标题为6的笔记结果展示
 
-![屏幕截图 2025-12-03 144304](image\屏幕截图 2025-12-03 144304.png)
 
 # 附加功能
 
@@ -257,9 +255,9 @@ public static int getSecondaryTextColor(Context context) {
 
 3.效果展示
 
-![屏幕截图 2025-12-06 231420](image\屏幕截图 2025-12-06 231420.png)
+![屏幕截图 2025-12-06 231420](https://github.com/klebgh/android-mid-shiyan/blob/main/NotePad-main/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-12-06%20231420.png?raw=true)
 
-![屏幕截图 2025-12-06 231538](image\屏幕截图 2025-12-06 231538.png)
+![屏幕截图 2025-12-06 231538](https://github.com/klebgh/android-mid-shiyan/blob/main/NotePad-main/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-12-06%20231538.png?raw=true)
 
 二、列表项布局添加内容预览
 
@@ -365,7 +363,7 @@ SearchResultsActivity 的实现与 NotesList 逻辑一致,这里不做展示
 </LinearLayout>
 ```
 
-![屏幕截图 2025-12-07 153657](image\屏幕截图 2025-12-07 153657.png)
+![屏幕截图 2025-12-07 153657](https://github.com/klebgh/android-mid-shiyan/blob/main/NotePad-main/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-12-07%20153657.png?raw=true)
 
 Java 逻辑适配（NoteSearch 类）
 
@@ -817,7 +815,7 @@ public class CategoryConstants {
     </LinearLayout>
 ```
 
-![屏幕截图 2025-12-07 181127](image\屏幕截图 2025-12-07 181127.png)
+![屏幕截图 2025-12-07 181127](https://github.com/klebgh/android-mid-shiyan/blob/main/NotePad-main/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-12-07%20181127.png?raw=true)
 
 2. 逻辑处理（`NoteEditor.java`）
 
@@ -913,7 +911,7 @@ private void saveNote() {
     android:scaleType="centerInside" />
 ```
 
-![屏幕截图 2025-12-07 180926](image\屏幕截图 2025-12-07 180926.png)
+![屏幕截图 2025-12-07 180926](https://github.com/klebgh/android-mid-shiyan/blob/main/NotePad-main/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-12-07%20180926.png?raw=true)
 
 2. 逻辑处理（`NotesList.java`）
 
