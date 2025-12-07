@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 分类颜色 -->
+    <color name="category_work">#FFEB3B</color>
+    <color name="category_study">#4CAF50</color>
+    <color name="category_life">#2196F3</color>
+    <color name="category_undefined">#9E9E9E</color>
+
+    <!-- 分类文字颜色 -->
+    <color name="category_text_dark">#212121</color>
+    <color name="category_text_light">#FFFFFF</color>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- 搜索框区域 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/search_bar_background">
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@android:drawable/ic_menu_search"
+            app:tint="?android:attr/textColorSecondary" />
+
+        <!-- 语音按钮放在这里 -->
+        <ImageView
+            android:id="@+id/voice_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@+id/search_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_mic"
+            android:contentDescription="语音搜索"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:tint="?android:attr/textColorSecondary" />
+
+        <ImageView
+            android:id="@+id/clear_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:visibility="gone"
+            app:tint="?android:attr/textColorSecondary" />
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_toLeftOf="@+id/clear_btn"
+            android:layout_toRightOf="@+id/voice_btn"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textSize="16sp"
+            android:hint="请输入搜索关键词"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+    <!-- 搜索模式切换 -->
+    <RadioGroup
+        android:id="@+id/search_mode_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radio_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="按标题搜索"
+            android:checked="true"
+            android:buttonTint="?android:attr/colorAccent"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <RadioButton
+            android:id="@+id/radio_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="按内容搜索"
+            android:buttonTint="?android:attr/colorAccent"
+            android:textColor="?android:attr/textColorPrimary" />
+
+    </RadioGroup>
+
+    <!-- 搜索按钮 -->
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:text="搜索"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="?android:attr/colorAccent"
+        android:textColor="@android:color/white" />
+
+    <!-- 提示信息 -->
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="14sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

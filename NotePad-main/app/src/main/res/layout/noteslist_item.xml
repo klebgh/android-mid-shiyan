@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <!-- 分类图标（左侧显示） -->
+    <ImageView
+        android:id="@+id/category_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerInside" />
+
+    <!-- 右侧内容区域 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 标题 -->
+        <TextView android:id="@android:id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+
+        <!-- 内容预览 -->
+        <TextView android:id="@+id/note_content_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:singleLine="true"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- 修改时间 -->
+        <TextView android:id="@+id/note_modification_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorSecondary"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
